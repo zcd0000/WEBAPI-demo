@@ -1,0 +1,337 @@
+﻿<!-- #开始：位置条 -->
+<div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+    </script>
+
+    <ul class="breadcrumb">
+        <li class="active">
+            <i class="ace-icon fa fa-home home-icon"></i>
+            首页
+        </li>
+    </ul>
+</div>
+<!-- /结束：位置条 -->
+<div class="page-content">
+    <!-- #开始:页面设置 -->
+    <div class="ace-settings-container hide" id="ace-settings-container">
+        <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+            <i class="ace-icon fa fa-cog bigger-150"></i>
+        </div>
+        <div class="ace-settings-box clearfix" id="ace-settings-box">
+            <div class="pull-left width-50">
+                <!-- #section:settings.skins -->
+                <div class="ace-settings-item">
+                    <div class="pull-left">
+                        <select class="hide" id="skin-colorpicker">
+                            <option value="#438EB9" data-skin="no-skin">#438EB9</option>
+                            <option value="#222A2D" data-skin="skin-1">#222A2D</option>
+                            <option value="#C6487E" data-skin="skin-2">#C6487E</option>
+                            <option value="#D0D0D0" data-skin="skin-3">#D0D0D0</option>
+                        </select><div class="dropdown dropdown-colorpicker">		<a class="dropdown-toggle" href="#" data-toggle="dropdown" data-position="auto"><span class="btn-colorpicker" style="background-color: rgb(67, 142, 185);"></span></a><ul class="dropdown-menu dropdown-caret"><li><a class="colorpick-btn selected" style="background-color: rgb(67, 142, 185);" href="#" data-color="#438EB9"></a></li><li><a class="colorpick-btn" style="background-color: rgb(34, 42, 45);" href="#" data-color="#222A2D"></a></li><li><a class="colorpick-btn" style="background-color: rgb(198, 72, 126);" href="#" data-color="#C6487E"></a></li><li><a class="colorpick-btn" style="background-color: rgb(208, 208, 208);" href="#" data-color="#D0D0D0"></a></li></ul></div>
+                    </div>
+                    <span>&nbsp; Choose Skin</span>
+                </div>
+                <!-- /section:settings.skins -->
+                <!-- #section:settings.navbar -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-navbar" type="checkbox">
+                    <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+                </div>
+                <!-- /section:settings.navbar -->
+                <!-- #section:settings.sidebar -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-sidebar" type="checkbox">
+                    <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                </div>
+                <!-- /section:settings.sidebar -->
+                <!-- #section:settings.breadcrumbs -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" type="checkbox">
+                    <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                </div>
+                <!-- /section:settings.breadcrumbs -->
+                <!-- #section:settings.rtl -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-rtl" type="checkbox">
+                    <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                </div>
+                <!-- /section:settings.rtl -->
+                <!-- #section:settings.container -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-add-container" type="checkbox">
+                    <label class="lbl" for="ace-settings-add-container">
+                        Inside
+                        <b>.container</b>
+                    </label>
+                </div>
+                <!-- /section:settings.container -->
+            </div><!-- /.pull-left -->
+            <div class="pull-left width-50">
+                <!-- #section:basics/sidebar.options -->
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-hover" type="checkbox">
+                    <label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+                </div>
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-compact" type="checkbox">
+                    <label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+                </div>
+                <div class="ace-settings-item">
+                    <input class="ace ace-checkbox-2" id="ace-settings-highlight" type="checkbox">
+                    <label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+                </div>
+                <!-- /section:basics/sidebar.options -->
+            </div><!-- /.pull-left -->
+        </div><!-- /.ace-settings-box -->
+    </div><!-- /.ace-settings-container -->
+    <!-- /结束:页面设置 -->
+    <div class="page-content-area">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 widget-container-col ui-sortable">
+                        <!-- #开始:首页.业绩数据 -->
+                        <div class="widget-box widget-color-blue ui-sortable-handle" style="opacity: 1;">
+                            <div class="widget-header">
+                                <h5 class="widget-title"><i class="ace-icon fa fa-star"></i>个人业绩数据</h5>
+                                <!-- #section:custom/widget-box.toolbar -->
+                                <div class="widget-toolbar hide">
+                                    <div class="widget-menu">
+                                        <a href="#" data-toggle="dropdown" data-action="settings">
+                                            <i class="ace-icon fa fa-bars"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-light-blue dropdown-caret dropdown-closer">
+                                            <li>
+                                                <a href="#dropdown1" data-toggle="tab">Option#1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#dropdown2" data-toggle="tab">Option#2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="orange2" href="#" data-action="fullscreen">
+                                        <i class="ace-icon fa fa-expand"></i>
+                                    </a>
+                                    <a href="#" data-action="reload">
+                                        <i class="ace-icon fa fa-refresh"></i>
+                                    </a>
+                                    <a href="#" data-action="collapse">
+                                        <i class="ace-icon fa fa-chevron-up"></i>
+                                    </a>
+                                    <a href="#" data-action="close">
+                                        <i class="ace-icon fa fa-times"></i>
+                                    </a>
+                                </div>
+                                <!-- /section:custom/widget-box.toolbar -->
+                            </div>
+                            <div class="widget-body">
+                                <div class="widget-main">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead class="thin-border-bottom">
+                                            <tr>
+                                                <th>
+                                                    本月业绩指标
+                                                </th>
+                                                <th>
+                                                    当月累计
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>前期充值金额（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>新签招生人数（人）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>后期充值金额（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订购金额（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>退订金额（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1对1课时量（个）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1对1上课学生人数（人）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1对1课时收入（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>班组收入（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>班组人数（人）</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>退费金额（元）</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /结束:首页.业绩数据 -->
+                    </div>
+                    <div class="col-xs-12 col-sm-6 widget-container-col ui-sortable">
+                        <div class="widget-box widget-color-blue ui-sortable-handle">
+                            <!-- #section:custom/widget-box.options -->
+                            <div class="widget-header">
+                                <h5 class="widget-title bigger lighter">
+                                    <i class="ace-icon fa fa-table"></i>
+                                    排行榜
+                                </h5>
+                                <div class="widget-toolbar no-border">
+                                    <ul class="nav nav-tabs" id="myTab">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#index1">新签实收</a>
+                                        </li>
+
+                                        <li>
+                                            <a data-toggle="tab" href="#index2">新签人数</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /section:custom/widget-box.options -->
+                            <div class="widget-body">
+                                <div class="widget-main no-padding">
+                                    <div class="tab-content">
+                                        <div id="index1" class="tab-pane in active">
+                                            <p class="alert alert-danger" style="height:30px; padding:4px;">
+                                                我的排行：校区第<span class="red">66</span>名 分公司第<span class="red">97</span>名 全国第<span class="red">830</span>名
+                                            </p>
+                                            <table class="table table-striped table-bordered table-hover">
+                                                <thead class="thin-border-bottom">
+                                                    <tr>
+                                                        <th>
+                                                            咨询师
+                                                        </th>
+                                                        <th>
+                                                            分公司排名
+                                                        </th>
+                                                        <th>新签实收</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1.胡发英</td>
+                                                        <td>
+                                                            第1名
+                                                        </td>
+                                                        <td>
+                                                            256
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2.胡发英</td>
+                                                        <td>
+                                                            第2名
+                                                        </td>
+                                                        <td>
+                                                            128
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3.胡发英</td>
+                                                        <td>
+                                                            第3名
+                                                        </td>
+                                                        <td>
+                                                            64
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4.胡发英</td>
+                                                        <td>
+                                                            第4名
+                                                        </td>
+                                                        <td>
+                                                            32
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.胡发英</td>
+                                                        <td>
+                                                            第5名
+                                                        </td>
+                                                        <td>
+                                                            16
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6.胡发英</td>
+                                                        <td>
+                                                            第6名
+                                                        </td>
+                                                        <td>
+                                                            8
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7.胡发英</td>
+                                                        <td>
+                                                            第7名
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8.胡发英</td>
+                                                        <td>
+                                                            第8名
+                                                        </td>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9.胡发英</td>
+                                                        <td>
+                                                            第9名
+                                                        </td>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10.胡发英</td>
+                                                        <td>
+                                                            第10名
+                                                        </td>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.span -->
+                </div><!-- /.row -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.page-content-area -->
+</div>

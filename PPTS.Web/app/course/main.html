@@ -1,0 +1,83 @@
+﻿<!-- #开始：位置条 -->
+<div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+    </script>
+
+    <ul class="breadcrumb">
+        <li class="active">
+            <i class="ace-icon fa fa-home home-icon"></i>
+            <a ui-sref="index">首页</a>
+        </li>
+        <li>
+            <i class="ace-icon fa fa-picture-o"></i>
+            课程管理
+        </li>
+        <li>
+            排课计划
+        </li>
+    </ul>
+</div>
+<!-- /结束：位置条 -->
+
+<div class="page-content">
+    <!-- #开始：排课计划 -->
+    <div class="page-content-area">
+        <div class="row">
+            <div class="col-xs-12">
+                <h5 class="well">
+                    学生：张三, 本月定制课时数：26, 已上课时：12, 已排课时：10
+                </h5>
+                <!-- #开始：排课计划.查询条件 -->
+                <div class="mcs-panel-search well well-sm">
+                    <form class="form-inline">
+                        <label class="control-label mcs-padding-right-15"> 上课状态 <input type="text" class="input-small" ng-model="vm.criteria.Status" /></label>
+                        <label class="control-label mcs-padding-right-15"> 上课年级 <input type="text" class="input-small" ng-model="vm.criteria.Grade" /></label>
+                        <label class="control-label mcs-padding-right-15"><table><tr><td>&nbsp;上课教师&nbsp;</td><td>
+
+                        <tags-input class="mcs-tags-input-lg" ng-disable="true" ng-model="vm.criteria.Teachers" key-property="TeacherId" display-property="TeacherName" placeholder="账号或姓名">
+                        <auto-complete min-length="1" source="queryTeacherList($query)"></auto-complete>
+                        </tags-input>
+
+                        </td></tr></table></label>
+                        <button class="btn btn-sm btn-success" ng-click="simpleSearch()">
+                            <i class="ace-icon fa fa-search"></i>
+                            查询
+                        </button>
+                    </form>
+                </div>
+                <!-- /结束：排课计划.查询条件 -->
+                <!-- #开始：排课计划.工具条 -->
+                <div class="mcs-panel-toolbar">
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round" ng-click="addSchedule()">新增课表</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round" ng-disabled="!vm.selectedEvent">取消课表</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round" ng-disabled="!vm.selectedEvent">复制课表</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round" ng-disabled="!vm.selectedEvent">调整课表</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round">复制周课表</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round">视图</button>
+                    <button class="btn btn-sm mcs-width-100 btn-white btn-bold btn-round">打印课表</button>
+                </div>
+                <!-- /结束：排课计划.工具条 -->
+                <!--<div uib-dropdown class="mcs-calendar-event" style="background-color:darkgray; width:150px;">
+                    <div ng-click="toggleEventSelected(vm.myEvent)" ng-class="{'mcs-calendar-event-selected': vm.myEvent.selected}">高三生物 余卓超</div>
+                    <div style="position: absolute; float: right; right:5px; top:0;" uib-dropdown-toggle ng-show="vm.myEvent.selected">
+                        <span class="caret"></span>
+                        <span class="sr-only">Split button!</span>
+                    </div>
+                    <ul uib-dropdown-menu role="menu" aria-labelledby="split-button" style="z-index:100;">
+                        <li role="menuitem"><a href="javascript:alert('复制');"><i class="ace-icon fa fa-floppy-o bigger-120 green"></i> 复制</a></li>
+                        <li role="menuitem"><a href="javascript:alert('调课');"><i class="ace-icon fa fa-random bigger-120 green"></i> 调课</a></li>
+                        <li class="divider"></li>
+                        <li role="menuitem"><a href="javascript:alert('取消');"><i class="ace-icon fa fa-trash-o bigger-120 orange"></i> 取消</a></li>
+                    </ul>
+                </div>-->
+                <!-- #开始：排课计划.日程表 -->
+                <div>
+                    <div ui-calendar="vm.uiConfig.calendar" ng-model="vm.eventSources"></div>
+                </div>
+                <!-- /结束：排课计划.日程表 -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div>
+    <!-- /结束：排课计划 -->
+</div>

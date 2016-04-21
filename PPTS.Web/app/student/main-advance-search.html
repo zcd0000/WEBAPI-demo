@@ -1,0 +1,759 @@
+﻿<div class="modal-header">
+    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">学员列表 - 高级查询</h4>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered">
+        <tr>
+            <td class="mcs-form-td-left">
+                分公司校区：
+            </td>
+            <td>
+                <a href="javascript:void(0);">选择机构</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                当前年级：
+            </td>
+            <td>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学一年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学二年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学三年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学四年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学五年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">小学六年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">初中一年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">初中二年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">初中三年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">初中四年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">高中一年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">高中二年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">高中三年级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblNianJi" class="ace" type="checkbox">
+                    <span class="lbl">高中毕业</span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                建档日期：
+            </td>
+            <td>
+                从:<input type="text" class="input-sm" />凌晨0:00 到:<input type="text" class="input-sm" />凌晨0:00
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                首次签约日期：
+            </td>
+            <td>
+                从:<input type="text" class="input-sm" />凌晨0:00 到:<input type="text" class="input-sm" />凌晨0:00
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                账户价值：
+            </td>
+            <td>
+                <input type="text" class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                剩余课时：
+            </td>
+            <td>
+                <input type="text" class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                可用金额：
+            </td>
+            <td>
+                <input type="text" class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                信息来源：
+            </td>
+            <td>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">地推</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">电话/短信</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">广播影视</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">户外广告</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">会销</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">课时体验券</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">渠道合作</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">市场调查</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">网络</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">行销</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">纸媒</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblXinXi" class="ace" type="checkbox">
+                    <span class="lbl">其他</span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                有效学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">全部有效</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuYouXiao" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuYouXiao" class="ace" type="radio">
+                                <span class="lbl">历史有效：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">1对1有效</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1YouXiao" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1YouXiao" class="ace" type="radio">
+                                <span class="lbl">历史有效：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">班组有效</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuYouXiao" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuYouXiao" class="ace" type="radio">
+                                <span class="lbl">历史有效：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">游学有效</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueYouXiao" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueYouXiao" class="ace" type="radio">
+                                <span class="lbl">历史有效：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                上课学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">全部上课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuShangKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuShangKe" class="ace" type="radio">
+                                <span class="lbl">历史上课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">1对1上课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1ShangKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1ShangKe" class="ace" type="radio">
+                                <span class="lbl">历史上课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">班组上课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuShangKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuShangKe" class="ace" type="radio">
+                                <span class="lbl">历史上课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">游学上课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueShangKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueShangKe" class="ace" type="radio">
+                                <span class="lbl">历史上课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                停课学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">全部停课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuTingKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuTingKe" class="ace" type="radio">
+                                <span class="lbl">历史停课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">1对1停课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1TingKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1TingKe" class="ace" type="radio">
+                                <span class="lbl">历史停课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">班组停课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuTingKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuTingKe" class="ace" type="radio">
+                                <span class="lbl">历史停课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">游学停课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueTingKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueTingKe" class="ace" type="radio">
+                                <span class="lbl">历史停课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                休课学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">全部休课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuXiuKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuXiuKe" class="ace" type="radio">
+                                <span class="lbl">历史休课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">1对1休课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1XiuKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1XiuKe" class="ace" type="radio">
+                                <span class="lbl">历史休课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">班组休课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuXiuKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuXiuKe" class="ace" type="radio">
+                                <span class="lbl">历史休课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">游学休课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueXiuKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueXiuKe" class="ace" type="radio">
+                                <span class="lbl">历史休课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                结课学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">全部结课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuJieKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblQuanBuJieKe" class="ace" type="radio">
+                                <span class="lbl">历史结课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">1对1结课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1JieKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rbl1v1JieKe" class="ace" type="radio">
+                                <span class="lbl">历史结课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">班组结课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuJieKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblBanZuJieKe" class="ace" type="radio">
+                                <span class="lbl">历史结课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="mcs-padding-right-15">
+                                <input class="ace" type="checkbox">
+                                <span class="lbl">游学结课</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueJieKe" class="ace" type="radio" checked>
+                                <span class="lbl">截止到当前</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblYouXueJieKe" class="ace" type="radio">
+                                <span class="lbl">历史结课：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                无订单学生：
+            </td>
+            <td>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <label>
+                                <input name="rblWuDingDan" class="ace" type="radio" checked>
+                                <span class="lbl">本月无订单学生</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input name="rblWuDingDan" class="ace" type="radio">
+                                <span class="lbl">历史无订单学生：</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-sm" placeholder="日期起" /> - <input type="text" class="input-sm" placeholder="日期止" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                VIP客户：
+            </td>
+            <td>
+                <label class="mcs-padding-right-15">
+                    <input name="cblVIP" class="ace" type="checkbox">
+                    <span class="lbl">A级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblVIP" class="ace" type="checkbox">
+                    <span class="lbl">B级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblVIP" class="ace" type="checkbox">
+                    <span class="lbl">C级</span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                转介绍客户：
+            </td>
+            <td>
+                <label class="mcs-padding-right-15">
+                    <input name="cblJieShao" class="ace" type="checkbox">
+                    <span class="lbl">A级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblJieShao" class="ace" type="checkbox">
+                    <span class="lbl">B级</span>
+                </label>
+                <label class="mcs-padding-right-15">
+                    <input name="cblJieShao" class="ace" type="checkbox">
+                    <span class="lbl">C级</span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center">
+                <label class="mcs-margin-right-20">
+                    <input name="rblAndOr" class="ace" type="radio" checked>
+                    <span class="lbl">AND</span>
+                </label>
+                <label>
+                    <input name="rblAndOr" class="ace" type="radio">
+                    <span class="lbl">OR</span>
+                </label>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-success" ng-click="ok()"><i class="ace-icon fa fa-check"></i>确定</button>
+    <button type="button" class="btn btn-sm btn-default" ng-click="cancel()"><i class="ace-icon fa fa-times"></i>取消</button>
+</div>

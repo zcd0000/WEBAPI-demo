@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>学大教育PPTS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href="plugin/bootstrap-3.0.1/bootstrap.min.css" rel="stylesheet" />
+    <link href="plugin/zTree-3.5.22/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <script src="plugin/jquery-2.1.1/jquery.min.js"></script>
+
+    <script src="plugin/zTree-3.5.22/js/jquery.ztree.all.js"></script>
+
+    <script src="plugin/angular-1.4.6/angular.js"></script>
+    <script src="app/common/directives/mcs-tree.directive.js"></script>
+
+    <script>
+        $(function () {
+            var setting = {
+                check: {
+                    enable: true,
+                    chkboxType : { "Y" : "ps", "N" : "ps" }
+                },
+                data: {
+                    simpleData: {
+                        enable: true
+                    }
+                },
+                async: {
+                    enable: true,
+                    url: "http://localhost:2676/api/Schedule/QueryChildDepartments",
+                    autoParam: ["id"],
+                    type: 'post',
+                    dataType: "json",
+                    //contentType: "application/json",
+                    dataFilter: function (treeId, parentNode, responseData) {
+                        return responseData.Data.List;
+                    }
+                }
+                //callback: {
+                //    onExpand: function (event, treeId, treeNode) {
+                //        alert(treeNode.children.length);
+                //    }
+                //}
+            };
+
+            var zNodes =[];
+        
+            var tree = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+            //$.post('http://localhost:2676/api/Schedule/QueryChildDepartments', { id: null }, function (data) {
+            //    tree.addNodes(null, data.Data.List);
+            //});
+        });
+
+        app.controller('myController', ['$scope',
+            function ($scope) {
+                var vm = {
+                    selectedDepartment: null,
+                    treeDepartment: {
+                        async:{
+                            enable: false,
+                            //url: 'http://localhost:2676/api/Schedule/QueryChildDepartments'
+                            url: 'http://localhost:2676/api/Schedule/QueryAllDepartments'
+                        }/*,
+                        nodes: [{ "id": "ec4c9e21-2fdb-42a3-bd46-9f68aa92812a", "children": [], "name": "4.1", "isParent": true }, { "id": "a60f8437-4e94-4db6-bf42-bc3d0c8b22c4", "children": [], "name": "4.2", "isParent": true }, { "id": "78efb14a-622e-4ed3-80fd-631298a38e8f", "children": [], "name": "4.3", "isParent": true }, { "id": "389f4c99-738b-4461-bedd-5cfadf085f21", "children": [], "name": "4.4", "isParent": true }, { "id": "276b4376-0970-4fb2-9f1d-084c4b6a44ed", "children": [], "name": "4.5", "isParent": true }, { "id": "764fecc5-79c4-4a8a-bd43-09facff903b7", "children": [], "name": "4.6", "isParent": true }, { "id": "5711dc63-80e2-427d-9ba6-7f7aafa663fd", "children": [], "name": "4.7", "isParent": true }, { "id": "39aa6dca-9456-45b3-af66-2b8442e740a6", "children": [], "name": "4.8", "isParent": true }, { "id": "b36b87a1-2672-4960-8a63-957ff725ac94", "children": [], "name": "4.9", "isParent": true }]
+                        */
+                    }
+                };
+                $scope.vm = vm;
+            }
+        ]);
+    </script>
+</head>
+<body ng-controller="myController">
+    <div>
+        <div class="row">
+            <div class="col-md-6" style="padding:20px;"><ul id="treeDemo" class="ztree"></ul></div>
+            <div class="col-md-6" style="padding:20px;"><ul mcs-tree="vm.treeDepartment" class="ztree" ng-model="vm.selectedDepartment"></ul></div>
+        </div>
+        你选择的节点是：{{vm.selectedDepartment.name}}
+    </div>
+</body>
+</html>

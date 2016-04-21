@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTS.Web.Portal", "PPTS.Web\PPTS.Web.Portal.csproj", "{1689D4AD-A302-4C38-B97E-4E0BD0BDCB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTS.Web.Student", "PPTS.Web.Student\PPTS.Web.Student.csproj", "{95F4D500-2DCD-495F-BC2B-8C2EE5D86BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTS.Web.Course", "PPTS.Web.Course\PPTS.Web.Course.csproj", "{74106860-F548-41E5-A5FE-D84246565A1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1689D4AD-A302-4C38-B97E-4E0BD0BDCB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1689D4AD-A302-4C38-B97E-4E0BD0BDCB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1689D4AD-A302-4C38-B97E-4E0BD0BDCB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1689D4AD-A302-4C38-B97E-4E0BD0BDCB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F4D500-2DCD-495F-BC2B-8C2EE5D86BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F4D500-2DCD-495F-BC2B-8C2EE5D86BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F4D500-2DCD-495F-BC2B-8C2EE5D86BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F4D500-2DCD-495F-BC2B-8C2EE5D86BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74106860-F548-41E5-A5FE-D84246565A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74106860-F548-41E5-A5FE-D84246565A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74106860-F548-41E5-A5FE-D84246565A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74106860-F548-41E5-A5FE-D84246565A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

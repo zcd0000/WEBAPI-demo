@@ -1,0 +1,130 @@
+﻿<div class="modal-header">
+    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">排课计划 - 新增课表</h4>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered">
+        <tr>
+            <td class="mcs-form-td-left">
+                教学点：
+            </td>
+            <td colspan="3">
+                北京分公司方庄校区
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                排课条件：
+            </td>
+            <td colspan="3">
+                <select class="mcs-width-100">
+                    <option selected>请选择</option>
+                    <option>test</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                订单编号：
+            </td>
+            <td colspan="3">
+                <select class="mcs-width-100">
+                    <option selected>请选择</option>
+                    <option>OD2016030700007</option>
+                    <option>OD2016030700006</option>
+                    <option>OD2016030700004</option>
+                    <option>OD2016030700001</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                产品名称：
+            </td>
+            <td>
+                <input type="text" readonly class="input-sm" />
+            </td>
+            <td class="mcs-form-td-left">
+                课时时长：
+            </td>
+            <td>
+                <input type="text" readonly class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                上课年级：
+            </td>
+            <td>
+                <select class="mcs-width-100">
+                    <option selected>请选择</option>
+                    <option>初一</option>
+                    <option>初二</option>
+                    <option>初三</option>
+                    <option>高一</option>
+                    <option>高二</option>
+                    <option>高三</option>
+                </select>
+            </td>
+            <td class="mcs-form-td-left">
+                上课科目：
+            </td>
+            <td>
+                <select class="mcs-width-100">
+                    <option selected>请选择</option>
+                    <option>语文</option>
+                    <option>数学</option>
+                    <option>英语</option>
+                    <option>历史</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                上课开始时间：
+            </td>
+            <td>
+                <input type="text" class="input-sm" />
+            </td>
+            <td class="mcs-form-td-left">
+                上课结束时间：
+            </td>
+            <td>
+                <input type="text" class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                实际上课时长：
+            </td>
+            <td>
+                <input type="text" readonly class="input-sm" />
+            </td>
+            <td class="mcs-form-td-left">
+                排定课时：
+            </td>
+            <td>
+                <input type="text" readonly class="input-sm" />
+            </td>
+        </tr>
+        <tr>
+            <td class="mcs-form-td-left">
+                排课类型：
+            </td>
+            <td colspan="3">
+                <label>
+                    <input name="rblScheduleType" class="ace" type="radio" checked>
+                    <span class="lbl">临时新增</span>
+                </label>
+                <label>
+                    <input name="rblScheduleType" class="ace" type="radio">
+                    <span class="lbl">未来按此时间上课</span>
+                </label>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-success" ng-click="ok()"><i class="ace-icon fa fa-check"></i>确定</button>
+    <button type="button" class="btn btn-sm btn-default" ng-click="cancel()"><i class="ace-icon fa fa-times"></i>取消</button>
+</div>
