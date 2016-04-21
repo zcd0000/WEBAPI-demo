@@ -10,8 +10,6 @@ angular.module('ppts.student.services').factory('studentService', ['$http', func
 			if (propertyName == "Page" || propertyName == "Limit") param[propertyName] = searchCondition[propertyName];
 			else param.ConditionItems.push({ ConditionName: propertyName, ConditionValue: searchCondition[propertyName], Operator: '=' });
 		}
-
-		return;
 		return param;
 	}
 
