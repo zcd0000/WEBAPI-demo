@@ -16,6 +16,8 @@ angular.module('ppts.student.services').factory('studentService', ['$http', func
 	function getDataComplete(response) {
 	    return response.data;
 
+	    return;
+
 	}
 
 	function getDataFailed(error) {
