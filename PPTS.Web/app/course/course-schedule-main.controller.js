@@ -13,6 +13,8 @@
 
             vm.Teachers = [{ text: 'abc' }];
 
+            //test git commit
+
             //配置日程组件
             vm.uiConfig = {
                 calendar: {
