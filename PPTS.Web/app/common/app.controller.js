@@ -19,6 +19,8 @@
     		$('#sidebar').toggleClass('compact');
     	};
 
+        //test surface commit
+
 		//暂时未实现
     	$scope.changeSettingSkin = function () {
     		ace.settings.set('skin', 'skin-1');
